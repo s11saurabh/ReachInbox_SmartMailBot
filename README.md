@@ -133,7 +133,7 @@ REDIS_PASS=<your_redis_password>
      "label":"interested/not-interested/more-information"
 }
 ```
-- `https://reachinbox-assignment-4rf9.onrender.com/outlook/sendone/:email/:id` - post request for sending mail to another user using outlook using `bullmq`
+- `https://saurabh-reachinbox.onrender.com/outlook/sendone/:email/:id` - post request for sending mail to another user using outlook using `bullmq`
 ```
 {
     "from":"sendersmail@gmail.com",
