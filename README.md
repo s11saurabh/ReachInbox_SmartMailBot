@@ -84,7 +84,61 @@ REDIS_PASS=<your_redis_password>
    ```
 
 ---
+## API Endpoints
 
+### For Google's OAuth2.0:
+- `https://saurabh-reachinbox.onrender.com/auth/google` - GET for google authentication
+- `https://saurabh-reachinbox.onrender.com/api/mail/userInfo/:email` - GET request to view user profile
+- `https://saurabh-reachinbox.onrender.com/api/mail/allDrafts/:email` - GET request to view all drafts mail.
+- `https://saurabh-reachinbox.onrender.com/api/mail/read/:email/message/:message` - GET request to read a specific email(using id).
+- `https://saurabh-reachinbox.onrender.com/api/mail/list/:email` - GET request to get a list of mails.
+- `https://saurabh-reachinbox.onrender.com/api/mail/sendMail` - POST request send mail with label.
+```
+{
+    "from":"sendersmail@gmail.com",
+    "to":"recieversmail@gmail.com",
+    "label":"interested/not-interested/more-information"
+}
+```
+- `https://saurabh-reachinbox.onrender.com/api/mail/sendone/:id` - POST request to send a single mail for particular ID.
+```
+{
+    "from":"sendersmail@gmail.com",
+    "to":"recieversmail@gmail.com"
+}
+```
+- - `https://saurabh-reachinbox.onrender.com//api/mail/sendMultiple/:id` - POST request to send a single mail for particular ID.
+ ```
+{
+    "from":"sendersmail@gmail.com",
+    "to":["demo@gmail.com","demo@gmail.com", "demo@gmail.com"]
+}
+```
+
+### For microsoft azur's OAuth2.0:
+
+- `https://saurabh-reachinbox.onrender.com/outlook/signin` - GET for micosoft azur authentication for outlook
+- `https://saurabh-reachinbox.onrender.com/outlook/callbak` - GET for micosoft azur getting access token
+- `https://saurabh-reachinbox.onrender.com/outlook/profile` - GET request to get profile data for particular user
+- `https://saurabh-reachinbox.onrender.com/outlook/all-Mails/{email}` - GET request for get ist of all mails of outllok user
+- `https://saurabh-reachinbox.onrender.com/outlook/{email}/read-Msg/{:message}` = GET request to read partivcular mail using messange id
+- `https://saurabh-reachinbox.onrender.com/outlook/{email}/send-Mail` - post request for sending mail to another user using outlook
+```
+{
+    "from":"sendersmail@gmail.com",
+    "to":"recieversmail@gmail.com"
+     "label":"interested/not-interested/more-information"
+}
+```
+- `https://reachinbox-assignment-4rf9.onrender.com/outlook/sendone/:email/:id` - post request for sending mail to another user using outlook using `bullmq`
+```
+{
+    "from":"sendersmail@gmail.com",
+    "to":"recieversmail@gmail.com"
+}
+```
+
+---
 ## Usage
 
 ### 1. Connecting Email Accounts
