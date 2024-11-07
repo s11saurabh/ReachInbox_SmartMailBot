@@ -54,17 +54,29 @@ View the source code on GitHub: [s11saurabh/ReachInbox_SmartMailBot](https://git
    ```bash
    npm install
    ```
+3.### Configure Environment Variables
+Create a `.env` file in the root directory and add the following variables:
 
-3. **Configure Environment Variables**:
-   Create a `.env` file and add the following variables:
-   ```plaintext
-   GOOGLE_CLIENT_ID=<your_google_client_id>
-   GOOGLE_CLIENT_SECRET=<your_google_client_secret>
-   OUTLOOK_CLIENT_ID=<your_outlook_client_id>
-   OUTLOOK_CLIENT_SECRET=<your_outlook_client_secret>
-   OPENAI_API_KEY=<your_openai_api_key>
-   REDIS_URL=<your_redis_url>
-   ```
+```plaintext
+# Google OAuth Configuration
+GOOGLE_CLIENT_ID=<your_google_client_id>
+GOOGLE_CLIENT_SECRET=<your_google_client_secret>
+GOOGLE_REDIRECT_URI=<your_google_redirect_uri>
+GOOGLE_REFRESH_TOKEN=<your_google_refresh_token>
+
+# Outlook OAuth Configuration
+OUTLOOK_CLIENT_ID=<your_outlook_client_id>
+OUTLOOK_CLIENT_SECRET=<your_outlook_client_secret>
+
+# OpenAI API Key
+OPENAI_API_KEY=<your_openai_api_key>
+
+# Redis Configuration
+REDIS_HOST=<your_redis_host>
+REDIS_PORT=<your_redis_port>
+REDIS_PASS=<your_redis_password>
+```
+
 
 4. **Run the Application**:
    ```bash
