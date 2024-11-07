@@ -107,7 +107,7 @@ REDIS_PASS=<your_redis_password>
     "to":"recieversmail@gmail.com"
 }
 ```
-- - `https://saurabh-reachinbox.onrender.com//api/mail/sendMultiple/:id` - POST request to send a single mail for particular ID.
+- - `https://saurabh-reachinbox.onrender.com/api/mail/sendMultiple/:id` - POST request to send a single mail for particular ID.
  ```
 {
     "from":"sendersmail@gmail.com",
