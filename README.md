@@ -95,6 +95,7 @@ REDIS_PASS=<your_redis_password>
 - `https://saurabh-reachinbox.onrender.com/api/mail/read/:email/message/:message` - GET request to read a specific email(using id).
 - `https://saurabh-reachinbox.onrender.com/api/mail/list/:email` - GET request to get a list of mails.
 - `https://saurabh-reachinbox.onrender.com/api/mail/sendMail` - POST request send mail with label.
+- ![image](https://github.com/user-attachments/assets/115a8231-7d35-4ae9-9ab0-7411f8cf24d8)
 ```
 {
     "from":"sendersmail@gmail.com",
