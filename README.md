@@ -1,3 +1,4 @@
+Note: Hosted link will take 1 min to open.kindly wait!
 # ReachInbox SmartMailBot
 
 ReachInbox SmartMailBot is a tool designed to automate email parsing, categorization, and responses for both Gmail and Outlook. Using OAuth for secure email access and OpenAI's language model for intelligent responses, it categorizes incoming emails and sends appropriate automated replies based on the context. It leverages BullMQ for task scheduling and is built with TypeScript.
